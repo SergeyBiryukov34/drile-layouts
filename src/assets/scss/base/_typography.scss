@@ -1,0 +1,19 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%;
+}
+
+.title {
+    font-family: 'Federo', sans-serif;
+    font-size: 4rem;
+    line-height: 5rem;
+    letter-spacing: .32px;
+    text-align: center;
+}
+
+.slider {
+    &__title {
+        font-size: 5rem;
+        line-height: 6rem;
+    }
+}

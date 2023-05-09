@@ -1,0 +1,125 @@
+.header {
+
+    position: relative;
+    padding: 2rem 0;
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-nav {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+
+        transform: translateY(-100rem);
+        transition: all .3s ease;
+
+        &_open {
+            transform: translateY(0);
+        }
+
+        &__list {
+            background: white;
+            padding-top: 5rem;
+        }
+
+        &__item {
+            font-size: 1.6rem;
+            line-height: 2.2rem;
+            letter-spacing: -.56px;
+        }
+
+        &__link {
+            text-align: center;
+            padding: 1rem;
+            color: #697390;
+        }
+    }
+
+    &-actions {
+        display: flex;
+
+        &__link {
+            margin-right: 2rem;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &__icon {
+            height: 2.4rem;
+            width: 2.4rem;
+        }
+
+        &__burger {
+            cursor: pointer;
+            position: relative;
+            z-index: 10;
+        }
+    }
+
+    @media screen and (min-width: 760px) {
+        padding: 3.7rem 0;
+
+        &-nav {
+            position: relative;
+            transform: translateY(0);
+
+            &__list {
+                display: flex;
+                padding-top: 0;
+            }
+
+            &__link {
+                padding: 0 1.2rem;
+            }
+        }
+
+        &-actions {
+            display: flex;
+
+            &__link {
+                margin-right: 2rem;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+
+            &__burger {
+                display: none;
+            }
+        }
+
+        &-nav__item,
+        &-actions__link {
+            transition: all .2s ease;
+
+            &:hover {
+                transform: translateY(-.2rem);
+            }
+
+            &:active {
+                transform: translateY(-.1rem);
+            }
+        }
+    }
+
+
+    @media screen and (min-width: 960px) {
+        &-nav__link {
+            padding: 0 2rem;
+        }
+
+        &-actions__link {
+            margin-right: 3.8rem;
+        }
+    }
+
+}

@@ -1,0 +1,27 @@
+.bestseller {
+    padding: 2rem 0;
+
+    &__title {
+        margin-bottom: 2rem;
+    }
+
+    &-cards {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+
+    @media screen and (min-width: 760px) {
+        padding: 4rem 0;
+
+        &__title {
+            margin-bottom: 4rem;
+        }
+
+        &-cards {
+            gap: 3rem;
+        }
+    }
+
+}

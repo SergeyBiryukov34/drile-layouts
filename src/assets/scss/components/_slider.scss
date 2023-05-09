@@ -1,0 +1,29 @@
+.slider {
+    position: relative;
+
+    &__arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 10;
+    }
+
+    &__arrow-prev {
+        left: 10;
+    }
+
+    &__arrow-next {
+        right: 10;
+    }
+
+    @media screen and (min-width: 1210px) {
+        &__arrow-prev {
+            left: -50;
+        }
+
+        &__arrow-next {
+            right: -50;
+        }
+    }
+}
